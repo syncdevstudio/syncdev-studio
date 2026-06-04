@@ -173,10 +173,10 @@ export function Footer({ onNavigate }: FooterProps) {
                   syncd85@gmail.com
                 </a>
               </li>
-              <li className="flex items-center space-x-2">
+              {/* <li className="flex items-center space-x-2">
                 <Phone className="w-3.5 h-3.5 text-brand-cyan shrink-0" />
                 <span>+62 (21) 8080-8910</span>
-              </li>
+              </li> */}
             </ul>
           </div>
 
