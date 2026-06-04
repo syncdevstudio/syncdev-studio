@@ -71,7 +71,7 @@ export function Footer({ onNavigate }: FooterProps) {
               id="footer-social-links"
             >
               <a
-                href="https://github.com"
+                href="https://github.com/syncdevstudio/syncdev-studio"
                 target="_blank"
                 rel="noreferrer"
                 id="social-github-link"
