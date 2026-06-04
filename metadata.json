@@ -1,0 +1,6 @@
+{
+  "name": "SyncDev Studio",
+  "description": "Boilerplate website untuk website Agency/Company Profile SyncDev Studio dengan desain modern, high-tech, kolaboratif, dan interaktif.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
