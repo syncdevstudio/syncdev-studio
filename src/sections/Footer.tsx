@@ -4,7 +4,7 @@ import {
   Phone,
   MapPin,
   Github,
-  Twitter,
+  Instagram,
   Linkedin,
   ArrowRight,
   Heart,
@@ -91,14 +91,14 @@ export function Footer({ onNavigate }: FooterProps) {
                 <Linkedin className="w-4 h-4" />
               </a>
               <a
-                href="https://twitter.com"
+                href="https://www.instagram.com/syncdev_studio/"
                 target="_blank"
                 rel="noreferrer"
-                id="social-twitter-link"
+                id="social-instagram-link"
                 className="w-8 h-8 rounded-lg bg-zinc-900 hover:bg-zinc-850 border border-zinc-800 text-zinc-400 hover:text-white flex items-center justify-center transition-colors"
-                aria-label="Twitter Link"
+                aria-label="Instagram Link"
               >
-                <Twitter className="w-4 h-4" />
+                <Instagram className="w-4 h-4" />
               </a>
             </div>
           </div>
