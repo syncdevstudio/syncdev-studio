@@ -162,7 +162,7 @@ export function Footer({ onNavigate }: FooterProps) {
             <ul className="space-y-2 text-xs font-sans text-zinc-400">
               <li className="flex items-center space-x-2">
                 <MapPin className="w-3.5 h-3.5 text-brand-cyan shrink-0" />
-                <span>Jakarta, Indonesia</span>
+                <span>Bandung, Indonesia</span>
               </li>
               <li className="flex items-center space-x-2">
                 <Mail className="w-3.5 h-3.5 text-brand-cyan shrink-0" />
