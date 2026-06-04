@@ -232,7 +232,7 @@ export function Footer({ onNavigate }: FooterProps) {
           <div className="flex items-center space-x-1.5 hover:text-zinc-400 transition-colors cursor-help">
             <span>Built with</span>
             <Heart className="w-3 h-3 text-red-500 fill-red-500" />
-            <span>in Jakarta Studio Workspace</span>
+            <span>in SyncDev Studio Workspace</span>
           </div>
         </div>
       </div>
