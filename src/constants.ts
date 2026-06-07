@@ -129,11 +129,18 @@ export function FinanceWidget({ data }) {
     subTitle: "Eksplorasi Alam di Ujung Jari Anda",
     description:
       "Rebranding dan restrukturisasi total pengalaman aplikasi mobile travel berbasis alam dengan navigasi intuitif dan alur pemesanan wisata yang mulus.",
-    category: "uiux & web",
-    imageUrl: "../assets/images/greentrail.png",
-    client: "GreenTrail Travel",
+    category: ["uiux", "web"],
+    imageUrl: new URL("../assets/images/greentrail.png", import.meta.url).href,
+    client: "GreenTrail Travel Co.",
     timeline: "1 Bulan (Q1 2026)",
-    tags: ["UIUX System", "Travel Web", "Booking Flow", "Figma Token", "React"],
+    tags: [
+      "UIUX System",
+      "Motion Design",
+      "Haptic Mapping",
+      "Figma Token",
+      "Tailwind CSS",
+      "React",
+    ],
     steps: {
       wireframe: {
         title: "Tahap 1: Pemetaan Alur Pencarian Destinasi",
@@ -173,10 +180,10 @@ export function FinanceWidget({ data }) {
           "Custom hooks untuk melacak posisi scroll galeri destinasi",
         ],
         visualType: "code-bundle",
-        codeSnippet: `// Destination Swipe Card
+        codeSnippet: `// Mobile Interaction Wrap
 import { motion, useMotionValue, useTransform } from 'motion/react';
 
-export function DestinationCard({ destination, onSwipe }) {
+export function DeskSwipeCard({ item, onSwipe }) {
   const x = useMotionValue(0);
   const opacity = useTransform(x, [-150, 0, 150], [0.5, 1, 0.5]);
 
@@ -185,14 +192,13 @@ export function DestinationCard({ destination, onSwipe }) {
       style={{ x, opacity }}
       drag="x"
       dragConstraints={{ left: -200, right: 200 }}
-      className="p-4 bg-green-950 border border-green-800 rounded-3xl cursor-grab"
+      className="p-4 bg-zinc-900 border border-zinc-800 rounded-3xl cursor-grab"
       onDragEnd={(e, info) => {
-        if (Math.abs(info.offset.x) > 100) onSwipe(info.offset.x > 0 ? "save" : "skip");
+        if (Math.abs(info.offset.x) > 100) onSwipe(info.offset.x > 0 ? "right" : "left");
       }}
     >
-      <div className="h-48 bg-green-900 rounded-2xl mb-4 overflow-hidden" />
-      <h4 className="font-sans text-white text-lg">{destination.name}</h4>
-      <p className="text-green-400 text-sm mt-1">{destination.location}</p>
+      <div className="h-48 bg-zinc-800 rounded-2xl mb-4 overflow-hidden" />
+      <h4 className="font-sans text-white text-lg">{item.title}</h4>
     </motion.div>
   );
 }`,
