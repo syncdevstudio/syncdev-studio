@@ -13,7 +13,7 @@ export const SERVICES: ServiceItem[] = [
       "Sistem Integrasi API & Database",
       "Keamanan Enkripsi End-to-End",
     ],
-    techBadge: "React / Vite / Node.js",
+    techBadge: "React / Vite / PHP",
   },
   {
     id: "uiux-design",
@@ -27,7 +27,7 @@ export const SERVICES: ServiceItem[] = [
       "Sistem Desain (Design Systems) Skalabel",
       "Riset & Pengujian Pengguna (UX Usability Tests)",
     ],
-    techBadge: "Figma / Design Token",
+    techBadge: "Figma / Photoshop",
   },
   {
     id: "digital-solutions",
