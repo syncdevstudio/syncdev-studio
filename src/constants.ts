@@ -1,4 +1,4 @@
-import { ServiceItem, PortfolioItem, FAQItem } from "./types";
+import { ServiceItem, PortfolioItem, FAQItem, TeamMember } from "./types";
 
 export const SERVICES: ServiceItem[] = [
   {
@@ -280,6 +280,24 @@ export class SyncEngine extends EventEmitter {
 }`,
       },
     },
+  },
+];
+
+export const TEAM_MEMBERS: TeamMember[] = [
+  {
+    id: "muhammad-adam-firdaus",
+    name: "Muhammad Adam Firdaus",
+    role: "Founder, UI/UX Designer & Quality Assurance",
+    imageUrl:
+      "https://api.dicebear.com/6.x/adventurer/svg?seed=Muhammad%20Adam%20Firdaus&backgroundColor=2d2d2d",
+    bio: "Membangun fondasi filosofi SyncDev, merancang pengalaman pengguna yang memukau, dan memastikan kualitas visual serta performa kode yang konsisten.",
+  },
+  {
+    id: "ricky-rohaendi",
+    name: "Ricky Rohaendi",
+    role: "Founder & Full-Stack Developer",
+    imageUrl: new URL("../assets/images/ricky.jpg", import.meta.url).href,
+    bio: "Membangun fondasi filosofi SyncDev, mengembangkan kode berkualitas tinggi, dan memastikan integrasi mulus antara desain dan pengembangan untuk setiap proyek.",
   },
 ];
 

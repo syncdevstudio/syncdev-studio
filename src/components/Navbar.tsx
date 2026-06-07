@@ -24,6 +24,7 @@ export function Navbar({ activeSection, onNavigate }: NavbarProps) {
     { label: "Home", id: "home" },
     { label: "Services", id: "services" },
     { label: "Portfolio", id: "portfolio" },
+    { label: "Team", id: "identitas" },
     { label: "Contact", id: "contact" },
   ];
 

@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
-import { motion } from "motion/react";
 import { Navbar } from "./components/Navbar";
 import { InteractiveNodes } from "./components/InteractiveNodes";
 import { Hero } from "./sections/Hero";
 import { Services } from "./sections/Services";
 import { Portfolio } from "./sections/Portfolio";
+import { Identitas } from "./sections/Identitas";
 import { Contact } from "./sections/Contact";
 import { Footer } from "./sections/Footer";
 
@@ -14,7 +14,13 @@ export default function App() {
   // Real-time page scroll section highlighter
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["home", "services", "portfolio", "contact"];
+      const sections = [
+        "home",
+        "services",
+        "portfolio",
+        "identitas",
+        "contact",
+      ];
       const scrollPos = window.scrollY + 250; // offset margin for smoother snapping
 
       for (const sect of sections) {
@@ -69,6 +75,9 @@ export default function App() {
 
         {/* CASE STUDIES PORTFOLIO */}
         <Portfolio />
+
+        {/* TEAM IDENTITY */}
+        <Identitas />
 
         {/* CONTACT & FAQs */}
         <Contact />

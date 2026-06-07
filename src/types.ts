@@ -49,6 +49,14 @@ export interface FAQItem {
   answer: string;
 }
 
+export interface TeamMember {
+  id: string;
+  name: string;
+  role: string;
+  imageUrl: string;
+  bio?: string;
+}
+
 export interface ContactMessage {
   name: string;
   email: string;
