@@ -130,8 +130,7 @@ export function FinanceWidget({ data }) {
     description:
       "Rebranding dan restrukturisasi total pengalaman aplikasi mobile travel berbasis alam dengan navigasi intuitif dan alur pemesanan wisata yang mulus.",
     category: "uiux & web",
-    imageUrl:
-      "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=700&q=80",
+    imageUrl: "../assets/images/greentrail.png",
     client: "GreenTrail Travel",
     timeline: "1 Bulan (Q1 2026)",
     tags: ["UIUX System", "Travel Web", "Booking Flow", "Figma Token", "React"],
