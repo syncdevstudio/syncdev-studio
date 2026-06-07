@@ -59,7 +59,7 @@ export const PORTFOLIO: PortfolioItem[] = [
     tags: ["Web Design", "Landing Page", "Menu Digital", "Reservasi Online"],
     links: {
       github: "https://github.com/kooo-design/d-lingga-coffee",
-      figma: "https://figma.com",
+      figma: "#",
       live: "https://dlingga-coffee.vercel.app/",
     },
     steps: {
