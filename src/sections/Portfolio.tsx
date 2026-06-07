@@ -14,6 +14,9 @@ import {
   Copy,
   Check,
   CornerDownRight,
+  Github,
+  Figma,
+  Globe,
 } from "lucide-react";
 import { PORTFOLIO } from "../constants";
 import { PortfolioItem, ProjectStepContent } from "../types";
@@ -250,16 +253,51 @@ export function Portfolio() {
                       </span>
                     </h3>
                   </div>
-                  <button
-                    id="modal-close-btn"
-                    onClick={() => {
-                      setSelectedProject(null);
-                      setDemoSyncResult(null);
-                    }}
-                    className="p-2 bg-white/5 hover:bg-white/10 rounded-full text-slate-400 hover:text-white transition-colors cursor-pointer border border-white/5"
-                  >
-                    <X className="w-4 h-4" />
-                  </button>
+                  <div className="flex items-center gap-2">
+                    {selectedProject.links?.github && (
+                      <a
+                        href={selectedProject.links.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="p-2 bg-white/5 hover:bg-white/10 rounded-full text-slate-400 hover:text-brand-cyan transition-colors cursor-pointer border border-white/5"
+                        title="View on GitHub"
+                      >
+                        <Github className="w-4 h-4" />
+                      </a>
+                    )}
+                    {selectedProject.links?.figma && (
+                      <a
+                        href={selectedProject.links.figma}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="p-2 bg-white/5 hover:bg-white/10 rounded-full text-slate-400 hover:text-brand-cyan transition-colors cursor-pointer border border-white/5"
+                        title="View on Figma"
+                      >
+                        <Figma className="w-4 h-4" />
+                      </a>
+                    )}
+                    {selectedProject.links?.live && (
+                      <a
+                        href={selectedProject.links.live}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="p-2 bg-white/5 hover:bg-white/10 rounded-full text-slate-400 hover:text-brand-cyan transition-colors cursor-pointer border border-white/5"
+                        title="Visit Live Website"
+                      >
+                        <Globe className="w-4 h-4" />
+                      </a>
+                    )}
+                    <button
+                      id="modal-close-btn"
+                      onClick={() => {
+                        setSelectedProject(null);
+                        setDemoSyncResult(null);
+                      }}
+                      className="p-2 bg-white/5 hover:bg-white/10 rounded-full text-slate-400 hover:text-white transition-colors cursor-pointer border border-white/5"
+                    >
+                      <X className="w-4 h-4" />
+                    </button>
+                  </div>
                 </div>
 
                 {/* Active Synchronization Phase Switches */}

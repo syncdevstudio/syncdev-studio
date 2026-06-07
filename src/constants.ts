@@ -58,6 +58,11 @@ export const PORTFOLIO: PortfolioItem[] = [
     client: "Nexis Capital Inc.",
     timeline: "3 Bulan (Q1 2026)",
     tags: ["React", "Tailwind CSS", "Recharts", "Framer Motion"],
+    links: {
+      github: "https://github.com",
+      figma: "https://figma.com",
+      live: "https://nexis-analytics.com",
+    },
     steps: {
       wireframe: {
         title: "Tahap 1: Struktur Grid & Alur Data",
@@ -141,6 +146,11 @@ export function FinanceWidget({ data }) {
       "Tailwind CSS",
       "React",
     ],
+    links: {
+      github: "https://github.com",
+      figma: "https://figma.com/file/greentrail",
+      live: "https://greentrail-travel.vercel.app/",
+    },
     steps: {
       wireframe: {
         title: "Tahap 1: Pemetaan Alur Pencarian Destinasi",
@@ -217,6 +227,11 @@ export function DeskSwipeCard({ item, onSwipe }) {
     client: "Inovasi Global Corpora",
     timeline: "4 Bulan (Q4 2025)",
     tags: ["WebSockets", "Node.js", "Redis", "Grafana Monitoring"],
+    links: {
+      github: "https://github.com/syncdev/omnisync",
+      figma: "https://figma.com",
+      live: "https://omnisync-engine.io",
+    },
     steps: {
       wireframe: {
         title: "Tahap 1: Arsitektur Pipeline Data",

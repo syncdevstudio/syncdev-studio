@@ -42,6 +42,11 @@ export interface PortfolioItem {
     prototype: ProjectStepContent;
     code: ProjectStepContent;
   };
+  links?: {
+    github?: string;
+    figma?: string;
+    live?: string;
+  };
 }
 
 export interface FAQItem {
