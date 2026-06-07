@@ -81,7 +81,7 @@ export function Footer({ onNavigate }: FooterProps) {
                 <Github className="w-4 h-4" />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/syncdev-studio-165850414/"
                 target="_blank"
                 rel="noreferrer"
                 id="social-linkedin-link"
