@@ -129,12 +129,12 @@ export function FinanceWidget({ data }) {
     subTitle: "Eksplorasi Alam di Ujung Jari Anda",
     description:
       "Rebranding dan restrukturisasi total pengalaman aplikasi mobile travel berbasis alam dengan navigasi intuitif dan alur pemesanan wisata yang mulus.",
-    category: "uiux",
+    category: "uiux & web",
     imageUrl:
       "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=700&q=80",
     client: "GreenTrail Travel",
-    timeline: "1.5 Bulan (Q2 2026)",
-    tags: ["UIUX System", "Travel App", "Booking Flow", "Figma Token"],
+    timeline: "1 Bulan (Q1 2026)",
+    tags: ["UIUX System", "Travel Web", "Booking Flow", "Figma Token", "React"],
     steps: {
       wireframe: {
         title: "Tahap 1: Pemetaan Alur Pencarian Destinasi",
