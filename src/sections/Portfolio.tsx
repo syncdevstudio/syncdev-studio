@@ -39,7 +39,11 @@ export function Portfolio() {
   ];
 
   const filteredProjects = PORTFOLIO.filter((project) =>
-    activeCategory === "all" ? true : project.category === activeCategory,
+    activeCategory === "all"
+      ? true
+      : Array.isArray(project.category)
+        ? project.category.includes(activeCategory)
+        : project.category === activeCategory,
   );
 
   const handleCopyCode = (codeText?: string) => {
@@ -158,7 +162,9 @@ export function Portfolio() {
 
                   {/* Category Pill Tag */}
                   <span className="absolute top-4 left-4 text-[10px] font-mono font-semibold uppercase px-2 py-0.5 rounded bg-[#0A0A0B]/95 border border-white/5 text-brand-cyan">
-                    {project.category}
+                    {Array.isArray(project.category)
+                      ? project.category.join(" / ")
+                      : project.category}
                   </span>
 
                   {/* Eye look marker */}

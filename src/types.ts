@@ -11,7 +11,11 @@ export interface ProjectStepContent {
   title: string;
   description: string;
   deliverables: string[];
-  visualType: "flowchart" | "ui-wireframe" | "interactive-prototype" | "code-bundle";
+  visualType:
+    | "flowchart"
+    | "ui-wireframe"
+    | "interactive-prototype"
+    | "code-bundle";
   codeSnippet?: string;
   wireframeLayout?: {
     header: string;
@@ -21,12 +25,14 @@ export interface ProjectStepContent {
   };
 }
 
+type PortfolioCategory = "web" | "uiux" | "digital-solution";
+
 export interface PortfolioItem {
   id: string;
   title: string;
   subTitle: string;
   description: string;
-  category: "all" | "web" | "uiux" | "digital-solution";
+  category: PortfolioCategory | PortfolioCategory[];
   imageUrl: string;
   client: string;
   timeline: string;
