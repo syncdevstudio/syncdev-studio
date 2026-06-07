@@ -47,62 +47,61 @@ export const SERVICES: ServiceItem[] = [
 
 export const PORTFOLIO: PortfolioItem[] = [
   {
-    id: "nexis-portal",
-    title: "Nexis SaaS Analytics",
-    subTitle: "Kecepatan Finansial dalam Satu Dashboard",
+    id: "dlingga-coffee",
+    title: "D'Lingga Coffee",
+    subTitle: "Temukan Momenmu di Setiap Tegukan",
     description:
-      "Sebuah platform analytics enterprise untuk melacak perputaran modal usaha secara real-time dengan layout bento grid melengkung halus.",
+      "Perancangan dan pengembangan website kedai kopi D'Lingga — menghadirkan pengalaman digital yang hangat, dari galeri menu hingga alur reservasi via WhatsApp.",
     category: "web",
-    imageUrl:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=700&q=80",
-    client: "Nexis Capital Inc.",
-    timeline: "3 Bulan (Q1 2026)",
-    tags: ["React", "Tailwind CSS", "Recharts", "Framer Motion"],
+    imageUrl: new URL("../assets/images/dlingga.png", import.meta.url).href,
+    client: "D'Lingga Coffee",
+    timeline: "1 Bulan (Q1 2026)",
+    tags: ["Web Design", "Landing Page", "Menu Digital", "Reservasi Online"],
     links: {
       github: "https://github.com",
       figma: "https://figma.com",
-      live: "https://nexis-analytics.com",
+      live: "https://dlingga-coffee.vercel.app/",
     },
     steps: {
       wireframe: {
-        title: "Tahap 1: Struktur Grid & Alur Data",
+        title: "Tahap 1: Pemetaan Struktur Halaman & Alur Pengunjung",
         description:
-          "Merancang wireframe bento-grid modular tanpa noise warna untuk memposisikan porsi visual data finansial yang paling krusial.",
+          "Merancang struktur navigasi website kedai kopi yang intuitif — memastikan pengunjung dapat menemukan menu, informasi lokasi, dan reservasi dengan mudah tanpa hambatan.",
         deliverables: [
-          "Tata letak widget interaktif & responsif",
-          "Optimalisasi ruang kosong (whitespace) 20%",
-          "Peta navigasi sidebar statis lipat",
+          "Hierarki navigasi: Home, About, Gallery, Menu, Testimoni, Reservasi",
+          "Layout hero section dengan tagline 'Find Your Moment'",
+          "Penempatan CTA 'Order Now' yang mengarah langsung ke reservasi",
         ],
         visualType: "ui-wireframe",
         wireframeLayout: {
-          header: "Navigation: Breadcrumbs + Profile Icon",
-          sidebar: "Main App Menu (< /> Developer Centered Icons)",
-          body: "Bento Layout: Card A (Big Chart placeholder), Card B (Secondary metric), Card C (Activity logger feed)",
-          footer: "System Status Identifier & Region Indicator",
+          header: "Navbar: Logo D'Lingga + Link Navigasi + Hamburger Mobile",
+          body: "Hero → About → Gallery Grid → Menu Cards → Testimoni → Info",
+          sidebar: "Tidak ada — navigasi vertikal satu kolom mobile-first",
+          footer: "Footer: Alamat Sumedang, Jam Buka 13.00–22.00, Social Media",
         },
       },
       prototype: {
-        title: "Tahap 2: High-Fidelity & Interaksi Micro",
+        title: "Tahap 2: Visual & Alur Reservasi WhatsApp",
         description:
-          "Menerapkan estetika glassmorphism modern, skema gelap dengan bayangan halus, serta animasi hover transisional pada widget.",
+          "Membangun prototype interaktif yang mensimulasikan perjalanan pengunjung — dari menikmati galeri suasana kedai, membaca menu andalan, hingga menekan tombol reservasi WhatsApp.",
         deliverables: [
-          "Skema transisi state antar tab analytics",
-          "Interaksi dinamis tooltip grafik hover",
-          "Feedback loading kerangka skeleton",
+          "Transisi scroll halus antar section dengan nuansa cozy coffee shop",
+          "Hover effect pada kartu menu (Lemonade Coffee, Mocatella, Butterscotch, dll.)",
+          "Micro-interaction tombol reservasi WhatsApp & Instagram",
         ],
         visualType: "interactive-prototype",
       },
       code: {
-        title: "Tahap 3: Implementasi Code Bersih",
+        title: "Tahap 3: Implementasi Menu Cards & Integrasi Reservasi",
         description:
-          "Mengompilasi template desain menjadi komponen React fungsional dengan render data dinamis dan responsive utilities.",
+          "Menerjemahkan desain ke kode — kartu menu interaktif dengan detail harga, galeri foto kedai, serta integrasi langsung ke WhatsApp untuk kemudahan reservasi pelanggan.",
         deliverables: [
-          "Arsitektur component split (reusable cards)",
-          "Integrasi chart d3/recharts anti-lag",
-          "Mencegah re-renders berlebih menggunakan react state",
+          "Komponen menu card dengan nama, deskripsi, dan harga produk",
+          "Galeri grid responsif untuk foto suasana dan minuman D'Lingga",
+          "Tombol reservasi dengan deep link WhatsApp wa.me",
         ],
         visualType: "code-bundle",
-        codeSnippet: `// Nexis Bento Dashboard Component
+        codeSnippet: `// D'Lingga Coffee Website Component
 import { motion } from 'motion/react';
 import { AreaChart, Area, XAxis, YAxis } from 'recharts';
 
