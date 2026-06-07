@@ -58,7 +58,7 @@ export const PORTFOLIO: PortfolioItem[] = [
     timeline: "1 Bulan (Q1 2026)",
     tags: ["Web Design", "Landing Page", "Menu Digital", "Reservasi Online"],
     links: {
-      github: "https://github.com",
+      github: "https://github.com/kooo-design/d-lingga-coffee",
       figma: "https://figma.com",
       live: "https://dlingga-coffee.vercel.app/",
     },
