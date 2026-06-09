@@ -36,6 +36,7 @@ export function Navbar({ activeSection, onNavigate }: NavbarProps) {
   return (
     <nav
       id="main-navbar"
+      aria-label="Navigasi utama"
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
           ? "py-4 bg-[#0A0A0B]/85 backdrop-blur-md border-b border-white/5"
